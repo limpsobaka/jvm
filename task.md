@@ -18,9 +18,9 @@
 }
 ```
 ## ClassLoader
-ClassLoader загружает классы JvmComprehension, Object.\
+ClassLoader загружает класс с main методом - JvmComprehension и ищет классы Object, Integer, System.\
 Сначала классы ищет Bootstrap ClassLoader, затем Platform ClassLoader, после него Application ClassLoader.\
-После подгрузки классов JVM проверяет валидность кода, подготавливает примитивы в статических полях и связывает ссылки на другие классы.\
+После того как классы найдены JVM проверяет валидность кода, подготавливает примитивы в статических полях и связывает ссылки на другие классы.\
 Далее выполняется инициализация статических полей.
 
 ## Runtime Data Area
